@@ -1,8 +1,9 @@
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>PHP Connexion à la BDD PDO</title>
   </head>
   <body>
+    <h1>Connexion et journalisation des erreurs</h1>
     <?php 
         $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMSS";
         $user = "root";

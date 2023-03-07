@@ -1,0 +1,1 @@
+Tuesday 7th of March 2023 02:17:27 PM  Le code erreur est : 1045 Le message : SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) Le fichier : /Applications/MAMP/htdocs/PDO_Studi_Part1/pdo_02_log.php
