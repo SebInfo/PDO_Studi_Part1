@@ -1,8 +1,9 @@
 <html>
   <head>
-    <title>PHP Test</title>
+    <title>PHP Connexion et gestion des erreurs</title>
   </head>
   <body>
+    <h1>Gestion des erreurs</h1>
     <?php 
         $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMS";
         $user = "root";

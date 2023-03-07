@@ -1,23 +1,23 @@
 <html>
   <head>
-    <title>PHP Récupérer des résultats</title>
+    <title>PHP Requete avec while</title>
   </head>
   <body>
-    <h1>Première requête</h1>
+    <h1>Requête avec la boucle while</h1>
     <?php 
-        $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMS";
-        $user = "root";
-        $pass = "root"; 
+        require_once 'login.php';
         try {
-            $bdd = new PDO ($dsn,$user,$pass);
+            $bdd = new PDO($dsn, $user, $pass, $opt);
         }
         catch(PDOException $e) {
             echo "Le code erreur est : ".$e->getCode();
             echo "<br>Le message : ".$e->getMessage();
             echo "<br>Le fichier : ".$e->getFile();
         }
+
         $req="SELECT nom, prenom FROM acteur";
-        foreach($bdd->query($req) as $acteur)
+        $result = $bdd->query($req);
+        while($acteur= $result->fetch())
         {
             echo $acteur['nom'].' '.$acteur['prenom']."<br />";
         }
