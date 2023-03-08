@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>PHP Test de connexion avec PDO</title>
+    <title>PHP Test de connexion avec PDO exemple 1</title>
   </head>
   <body>
     <h1>Test de connexion avec PDO</h1>
