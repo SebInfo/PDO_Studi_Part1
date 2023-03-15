@@ -19,9 +19,9 @@
             $errorMessage .= " Le fichier : ".$e->getFile();
             $errorMessage .= "\n";
             // Chemin du fichier log
-            $logFile = "./errors.log";
+            $logFile = "./logs/errors.log";
             // Chemin du fichier accès non autorisé 
-            $logFileAccess = "./access.log";
+            $logFileAccess = "./logs/access.log";
             // Enregistrement du message d'erreur dans le fichier log
             error_log($errorMessage, 3, $logFile);
             if ($e->getCode() == 1045)

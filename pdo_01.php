@@ -5,11 +5,12 @@
   <body>
     <h1>Test de connexion avec PDO</h1>
     <?php 
-        $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMS";
+        $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMSS";
         $user = "root";
         $pass = "root"; 
         // Création de l'objet PDO sans gérer l'exception éventuelle
         $bdd = new PDO($dsn,$user,$pass);
+
     ?> 
   </body>
 </html>

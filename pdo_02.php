@@ -5,7 +5,7 @@
   <body>
     <h1>PHP Connexion à la BDD avec PDO</h1>
     <?php 
-        $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMS";
+        $dsn = "mysql:host=127.0.0.1;port=8889;dbname=FILMSS";
         $user = "root";
         $pass = "root"; 
         try {
