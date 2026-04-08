@@ -10,9 +10,9 @@
         $pass = "root"; 
         try {
             $bdd = new PDO ($dsn,$user,$pass);
-            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
+            //$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
             //$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-            //$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e) {
             echo "Le code erreur est : ".$e->getCode();

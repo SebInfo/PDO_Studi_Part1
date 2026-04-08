@@ -25,6 +25,7 @@
             <?php
             $req="SELECT nom, prenom FROM acteur";
             $result = $bdd->query($req);
+            //var_dump($result);
             while($acteur= $result->fetch())
             {?>
                 <tr>

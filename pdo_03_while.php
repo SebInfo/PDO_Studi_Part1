@@ -17,7 +17,7 @@
 
         $req="SELECT nom, prenom FROM acteur";
         $result = $bdd->query($req);
-        while($acteur= $result->fetch())
+        while($acteur = $result->fetch())
         {
             echo $acteur['nom'].' '.$acteur['prenom']."<br />";
         }
